@@ -1,8 +1,8 @@
 def fibonacci_sequence(n):
     if n < 0:
-        raise ValueError([])
+       
 
-    sequence = []
+        sequence = []
     if n == 0:
         return sequence
     elif n == 1:
