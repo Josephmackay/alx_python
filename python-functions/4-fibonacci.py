@@ -1,6 +1,6 @@
 def fibonacci_sequence(n):
     if n < 0:
-        raise ValueError("[]")
+        raise ValueError([])
 
     sequence = []
     if n == 0:
