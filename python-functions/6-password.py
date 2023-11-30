@@ -1,17 +1,32 @@
 def validate_password(password):
     if len(password) < 8:
         return False
-   
-    if not re.search("[a-z]", password):
+
+    has_uppercase = False
+    has_lowercase = False
+    has_digit = False
+    has_space = False
+
+    for char in password:
+        if char.isupper():
+            has_uppercase = True
+        elif char.islower():
+            has_lowercase = True
+        elif char.isdigit():
+            has_digit = True
+        elif char == " ":
+            has_space = True
+
+    if not has_uppercase:
         return False
-    
-    if not re.search("[A-Z]", password):
+
+    if not has_lowercase:
         return False
- 
-    if not re.search("[0-9]", password):
+
+    if not has_digit:
         return False
- 
-    if re.search(" ", password):
+
+    if has_space:
         return False
 
     return True
