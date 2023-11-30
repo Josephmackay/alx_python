@@ -1,16 +1,22 @@
 def fibonacci_sequence(n):
-     if n < 0:
+    if n < 0:
         raise ValueError("n must be non-negative")
 
+    sequence = []
     if n == 0:
-        return []
+        return sequence
     elif n == 1:
-        return [0]
+        sequence.append(0)
+        return sequence
     elif n == 2:
-        return [0, 1]
+        sequence.extend([0, 1])
+        return sequence
     else:
-        sequence = [0, 1]
-        for i in range(2, n):
-            next_number = sequence[i - 1] + sequence[i - 2]
+        sequence.extend([0, 1])
+        for _ in range(2, n):
+            next_number = sequence[-1] + sequence[-2]
+            # Check for overflow
+            if next_number < 0:
+                raise OverflowError("Fibonacci sequence overflow")
             sequence.append(next_number)
         return sequence
