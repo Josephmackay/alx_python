@@ -1,3 +1,3 @@
 for num in range(99):
-    print(f"{num} = 0x{num:02x}")
+    print("{0} = 0x{0:02x}".format(num))
     
