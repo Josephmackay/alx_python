@@ -6,7 +6,7 @@ if number_of_arguments == 1:
     print("1 argument")
     print("1: {}".format(sys.argv[1]))
 elif number_of_arguments == 2:
-    print("2 arguments:")
+    print("1 arguments:")
     print("1: {}".format(sys.argv[1]))
     print("2: {}".format(sys.argv[2]))
 elif number_of_arguments == 3:
