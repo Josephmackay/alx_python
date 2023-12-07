@@ -1,11 +1,5 @@
-def add(a, b):
-    """My addition function
+a = 1
+b = 2
 
-    Args:
-        a: first integer
-        b: second integer
-
-    Returns:
-        The return value. a + b
-    """
-    return (a + b)
+from add_0 import add
+print("{} + {} = {}".format(a, b, add(a, b)))
