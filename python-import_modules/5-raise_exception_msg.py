@@ -5,4 +5,4 @@ def raise_exception_msg(message=""):
   Args:
     message: The custom message to include in the exception.
   """
-  raise NameError(f"This is a custom name exception: {message}")
+  raise NameError("{}".format(message))
