@@ -9,3 +9,5 @@ else:
 
     for i, argument in enumerate(sys.argv[1:]):
         print(f"{i + 1}: {argument}")
+if __name__ == "__main__":
+    pass        
