@@ -3,7 +3,7 @@ import sys
 number_of_arguments = len(sys.argv)
 
 if number_of_arguments == 1:
-    print("0 arguments")
+    print("0 arguments.")
 elif number_of_arguments == 2:
     print("1 argument:")
     print("1: {}".format(sys.argv[1]))
