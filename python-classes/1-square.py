@@ -40,9 +40,6 @@ class Square:
     def __repr__(self):
         return f"Square({self.__size})"
     
-my_square_1 = Square(3)
-print(type(my_square_1))
-print(my_square_1.__dict__)
 
 
 
