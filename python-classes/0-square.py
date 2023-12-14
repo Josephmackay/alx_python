@@ -13,7 +13,6 @@ Function:
 
 def is_same_class(obj, a_class):
     return isinstance(obj, a_class) and obj.__class__ == a_class
+    #theh eu hu  uy u u huyg
+#dyu gki  7e 
 
-
-
-    ...
