@@ -4,6 +4,6 @@ def is_same_class(obj, a_class):
 
 a = 1
 if is_same_class(a, int):
-    print(f"{a} is an exact instance of the class {int.__name__}")
+    print (isinstance)
 
 # Output: 1 is an exact instance of the class int
