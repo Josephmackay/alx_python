@@ -1,18 +1,24 @@
 """
-This module defines the is_same_class function for checking exact class matches.
+This function checks if an object is an exact instance of a specified class without importing any external modules.
 
-Why no imports:
+Args:
+    obj: The object to be checked.
+    a_class: The class to compare against.
 
-- Showcases a self-contained solution without external dependencies.
+Returns:
+    True if the object is an exact instance of the class, False otherwise.
 
-Function:
-
-- is_same_class(obj, a_class): Returns True if obj is an exact instance of a_class, False otherwise.
-
+Examples:
+    ```python
+    is_same_class(1, int)  # True
+    is_same_class([], list)  # True
+    is_same_class("string", str)  # True
+    is_same_class(1.0, float)  # False (not exact class match)
+    is_same_class([], tuple)  # False (subclass, not exact match)
+    ```
 """
 
 def is_same_class(obj, a_class):
     return isinstance(obj, a_class) and obj.__class__ == a_class
-    #theh eu hu  uy u u huyg
-#dyu gki  7e 
+
 
