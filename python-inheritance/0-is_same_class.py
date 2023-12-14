@@ -1,7 +1,7 @@
 def is_same_class(obj, a_class):
     # Use isinstance check with strict comparison
     return isinstance(obj, a_class) and obj.__class__ == a_class
-
+#Example
 a = 1
 is_printed = False
 if is_same_class(a, int):
