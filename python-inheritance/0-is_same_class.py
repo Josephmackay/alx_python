@@ -15,7 +15,4 @@ def is_same_class(obj, a_class):
 
 # Example usage
 a = 1
-if is_same_class(a, int):
-  print("1 is an exact instance of the class int")
-else:
-  print("1 is not an exact instance of the class int")
+print(is_same_class(a, int))
