@@ -12,7 +12,7 @@ if is_same_class(a, int):
 if is_same_class(a, float) or is_same_class(a, object):
     # Handle other cases or print nothing if not applicable
 
-if not is_printed:
+    if not is_printed:
     print(f"{a} is not an exact instance of any specified class")
 
 # Output: 1 is an exact instance of the class int
