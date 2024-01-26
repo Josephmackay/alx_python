@@ -3,15 +3,18 @@ import requests
 import sys
 
 if __name__ == "__main__":
+    if len(sys.argv) != 3:
+        print("Usage: {} <username> <token>".format(sys.argv[0]))
+        sys.exit(1)
+
     username = sys.argv[1]
     token = sys.argv[2]
 
-    url = 'https://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@github.com/Josephmackay/alx_python'
-    auth = (username, token)
-    response = requests.get(url, auth=auth)
+    url = 'https://api.github.com/user'
+    response = requests.get(url, auth=(username, token))
 
     try:
-        user_data = response.json()
-        print(user_data.get('id', None))
+        data = response.json()
+        print(data.get('id', 'None'))
     except ValueError:
-        print(None)
+        print('None')
