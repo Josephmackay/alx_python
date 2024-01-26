@@ -1,9 +1,21 @@
 #!/usr/bin/python3
-""" Module for the Base class """
+"""
+Module for the Base class
+"""
+
 class Base:
+    """ Base class for managing id attribute in future classes """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
+        """
+        Initializes an instance of the Base class.
+
+        Args:
+            id (int): If provided, assigns the value to the id attribute.
+                      Otherwise, increments __nb_objects and assigns the new value to id.
+        """
         if id is not None:
             self.id = id
         else:
@@ -25,4 +37,3 @@ if __name__ == "__main__":
 
     b5 = Base()
     print(b5.id)
-
